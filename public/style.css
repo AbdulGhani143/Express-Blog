@@ -1,0 +1,262 @@
+body {
+    background-color: #FDF6EC;
+    margin: 0;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: 300;
+}
+
+.blog-title {
+    color: #356273;
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.post {
+    background-color: #E8C4A7;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 16px;
+    width: 320px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.post-username {
+    color: #356273;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.post-content {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.post-buttons {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    all: unset;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.detail-btn { background-color: #4A90E2; }
+.edit-btn { background-color: #F4A698; }
+.delete-btn { background-color: #E57373; }
+.new-btn { background-color: #8BC34A; }
+
+/* The colour will change when you hover over the buttons. */
+
+.detail-btn:hover { background-color: #357ABD; }
+.edit-btn:hover { background-color: #E88E8E; }
+.delete-btn:hover { background-color: #D9534F; }
+.new-btn:hover { background-color: #7CB342; }
+
+/* Detail Page Styling Starting Here */
+/* Detail Page Styling */
+
+.details-title {
+    color: #356273;
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.post-details {
+    background-color: #FAF3E0;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    max-width: 600px;
+}
+
+.post-id {
+    color: #717171;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.post-username-details {
+    color: #356273;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-family: 'Winky Sans', sans-serif; 
+    font-weight: 300;
+}
+
+.post-content-details {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: 'Winky Sans', sans-serif;
+}
+
+/* The Edit page styling is starting from here now */
+
+.edit-title {
+    color: #356273;
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.edit-container {
+    background-color: #FAF3E0;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    max-width: 550px;
+}
+
+.edit-post-id, .edit-username {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.edit-textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+    background-color: #FDEBD0;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-btn {
+    all: unset;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-btn {
+    background-color: #4A90E2;
+}
+
+.submit-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Now the Create New Post page styling is starting from here. */
+
+.create-title {
+    color: #356273;
+    text-align: center;
+    font-size: 29px;
+    margin-bottom: 20px;
+}
+
+.create-container {
+    background-color: #FAF3E0;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    max-width: 550px;
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create-input{
+    all: unset;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: #333;
+    font-size: 14px;
+    background-color: #FFF9E6;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.create-textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+    background-color: #FDEBD0;
+    color: #333;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.create-btn {
+    all: unset;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-btn {
+    all: unset;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #8BC34A; 
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.create-btn:hover {
+    background-color: #7CB342;
+}
